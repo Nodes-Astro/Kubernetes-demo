@@ -4,7 +4,7 @@
 
 This project demonstrates how to set up a **single-node Kubernetes cluster (k3s)** on a VPS and deploy a production-style application using core Kubernetes primitives.
 
-The goal is to showcase **real-world DevOps practices** such as configuration management, secrets handling, health checks, scaling, and self-healing — without relying on managed cloud Kubernetes services.
+The goal is to showcase **real-world DevOps practices** such as configuration management, secrets handling, health checks, scaling, and self-healing without relying on managed cloud Kubernetes services.
 
 ---
 
@@ -19,13 +19,15 @@ The goal is to showcase **real-world DevOps practices** such as configuration ma
 
 ### Resource Hierarchy
 
-Namespace (prod)
-├── Deployment (demo-deploy)
-│ └── ReplicaSet
-│ └── Pods (nginx containers)
-├── Service (demo-svc)
-├── ConfigMap (demo-config)
-└── Secret (demo-secret)
+Namespace: prod
+├── Deployment: demo-deploy
+│   └── ReplicaSet
+│       └── Pods
+│           └── Container: nginx
+├── Service: demo-svc (NodePort)
+├── ConfigMap: demo-config
+└── Secret: demo-secret
+
 
 YAML
 
