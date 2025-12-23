@@ -19,6 +19,7 @@ The goal is to showcase **real-world DevOps practices** such as configuration ma
 
 ### Resource Hierarchy
 
+```
 Namespace: prod
 ├── Deployment: demo-deploy
 │   └── ReplicaSet
@@ -27,6 +28,8 @@ Namespace: prod
 ├── Service: demo-svc (NodePort)
 ├── ConfigMap: demo-config
 └── Secret: demo-secret
+```
+
 
 
 YAML
